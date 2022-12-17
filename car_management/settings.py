@@ -128,3 +128,7 @@ STATICFILES_DIRS=[
     os.path.join(BASE_DIR, 'car_management/static'),
 ]
 
+
+#media setting
+MEDIA_ROOT=os.path.join(BASE_DIR, 'media')
+MEDIA_URL='/media/'
