@@ -25,5 +25,7 @@ class Car(models.Model):
     passengers=models.IntegerField()
     milage=models.IntegerField()
     fuel_type=models.CharField(max_length=100)
+    is_featured=models.BooleanField(default=False )
     created_date=models.DateTimeField(auto_now_add=True)
-    
+    def __str__(self):
+        return self.car_title
