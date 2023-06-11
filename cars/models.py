@@ -1,7 +1,7 @@
 import datetime
 from django.db import models
 
-# Create your models here.
+# This s the car model.
 class Car(models.Model):
     car_title=models.CharField(max_length=255)
     city=models.CharField(max_length=100)
